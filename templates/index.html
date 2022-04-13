@@ -1,0 +1,23 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }} Best Pizza in CodeClan </title>
+    </head>
+    <body>
+        <h1>
+            Our order list!
+        </h1>
+        {% for order in order_list %}
+        <div>
+            <a>
+                <p>
+                {{ order.customer_name }} | {{ order.order_date }} | {{order.quantity }}
+                </p>
+            </a>
+        </div>
+        {%endfor%}
+    </body>
+    </html>
