@@ -8,10 +8,14 @@
     <title>{{ title }}</title>
 </head>
 <body>
-
-    <div>
+    <div class="hero-img">
+        <img src="{{ url_for('static', filename = 'cc-pizza.jpg') }}" alt="CodeClan Pizzas">
+    </div>
+        <h1>CodeClan Pizza</h1>
+            <h2>Order</h2>
+    <div class="order-list">
         <p>
-            {{ order.customer_name }} | {{ order.order_date }} | {{order.quantity }}
+            {{ order.customer_name }} | {{ order.order_date }} | {{order.menu_item}} | {{order.quantity }}
         </p>
     </div>
 
