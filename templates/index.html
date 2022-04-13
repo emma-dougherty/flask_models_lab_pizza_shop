@@ -12,7 +12,7 @@
         </h1>
         {% for order in order_list %}
         <div>
-            <a>
+            <a href="/orders/{{ order_list.index(order) }}">
                 <p>
                 {{ order.customer_name }} | {{ order.order_date }} | {{order.quantity }}
                 </p>
